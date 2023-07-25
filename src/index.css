@@ -11,3 +11,264 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+.App{
+  max-width: 100%;
+  background-color: rgb(39, 38, 38);
+}
+
+.footcontainer{
+  width:100%;
+  background-color: black;
+  color: white;
+}
+.footcontainer .quesandcontact{
+  text-decoration: underline;
+}
+.footcontainer .innerfoot{
+  display:flex;
+  justify-content: center;
+  text-decoration: underline;
+  padding:50px;
+}
+.home .contain{
+  padding: 0 20px;
+}
+.home .contain .sec1 img{
+  max-width: 100%;
+  height: auto;
+}
+.home .contain .sec1{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  padding-left: 30px;
+}
+.home .contain .sec1 p{
+  font-size: 25px;
+}
+.home .homein{
+   margin:10px 0;
+   background-color: black;
+   color: white;
+   padding: 20px 0;
+}
+.nav{
+  height: 100vh;
+}
+.nav .topimge{
+  height: 100vh;
+  width: 100%;
+  background-image: url("../public/image/netfliximg.jpg");
+}
+.nav .signin{
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+  width: 70px;
+  text-align: center;
+}
+.nav .signin a{
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+.nav .brand{
+  margin-left: 50px;
+}
+.nav .topimge .topwords{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.nav .topimge .topwords .topwordword{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.nav .topimge .topwords p{
+  font-size: 20px;
+}
+ .nav .topimge .topwords input[type='text']{
+  width: 400px;
+  height: 50px;
+  background-color: rgba(17, 13, 13, 0.411);
+  color: white;
+  border: 1px solid white;
+}
+.nav .topimge .topwords form{
+  height: 50px;
+}
+.nav .topimge .topwords button{
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.home .sectionfour img{
+  max-width: 100%;
+  height: auto;
+
+}
+.home .sectionfive{
+  display: flex;
+  justify-content: center;
+}
+.home .sectionfive .sec5{
+  width: 80%;
+}
+.home .sectionfive h1{
+  text-align: center;
+}
+.home .sectionfive button{
+background-color: rgb(70, 69, 69);
+width: 100%;
+height: auto;
+padding: 20px;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.home .sectionfive button:hover{
+  background-color: gray;
+  transition: 1s ease;
+}
+.home .sectionfive button span{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  margin-left: 20px;
+}
+.home .sectionfive .answer{
+  display: none;
+}
+.home .sectionfive .plus, .times{
+  font-size: 20px;
+  margin-right: 20px;
+}
+.home .sectionfive .showanswer{
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.home .sectionfive .topwords input[type='text']{
+  width: 350px;
+  height: 50px;
+  background-color: rgba(17, 13, 13, 0.411);
+  color: white;
+  border: 1px solid white;
+}
+.home .sectionfive .topwords{
+  padding: 20px 0;
+}
+.home .sectionfive .topwords p{
+  text-align: center;
+}
+.home .sectionfive .topwords form{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding:10px 0;
+}
+
+
+
+.home .sectionfive .topwords button{
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.home .sectionfive .topwords button{
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+} 
+
+ @media screen and (max-width:782px){
+  .nav .topimge .topwords form{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav .topimge .topwords input[type='text']{
+    width: 200px;
+  background-color: rgba(17, 13, 13, 0.411);
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  }
+  .nav .topimge .topwords button{
+    margin-top: 10px;
+    font-size: 12px;
+    width: 100px;
+    align-self: center;
+  }
+  
+  .home .sectionfive .topwords form{
+    display: flex;
+    flex-direction: column;
+  }
+  .home .sectionfive .topwords input[type='text']{
+    width: 200px;
+  background-color: rgba(17, 13, 13, 0.411);
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  align-self: center;
+  }
+  .home .sectionfive .topwords button{
+    margin-top: 10px;
+    font-size: 12px;
+    width: 100px;
+    align-self: center;
+  }
+ 
+ 
+
+}
+@media screen and (max-width:330px){
+  .nav .topimge .topwords .topwordword{
+    display: none;
+  }
+  .nav .topimge .topwords form{
+    margin-top: 50%;
+  }
+  .mynav .brand{
+    display: none;
+  }
+}
